@@ -20,7 +20,7 @@ export class RegistryController {
   @Get(':id')
   async getRecordById(
     @Param('id') id: Number,
-    @Query('date') date?: String
+    @Query('date') date?: string
     ): Promise<LongRecord> 
   {
     return this.registryService.getRegistryById(id, date);

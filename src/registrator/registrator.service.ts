@@ -16,7 +16,7 @@ export class RegistratorService {
     getPostsById(id:Number, page: Number, per_page: Number): Array<LongRecord>{
         return database.getRegistry(page,per_page,id);
     }
-    getHistoryForRecord(regId:Number, postId:Number):String{
+    getHistoryForRecord(regId:Number, postId:Number):string{
         return ""+regId+" do "+ postId;
     }
     updateRegistrator(reg: LongRegistrator): Number{

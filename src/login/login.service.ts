@@ -9,8 +9,8 @@ export class LoginService {
         private jwtService: JwtService
       ) {}
     
-    getToken(email: String, pass: String): String{
-        const user = database.getUser(email, pass);
+    async getToken(email: string, pass: string): Promise<string>{
+        const user = await database.getUser(email, pass);
         if (user) return this.jwtService.sign(user);
         else return null;
     }

@@ -2,11 +2,11 @@ import { Passport } from "./passport_data";
 
 export class LongAdmin{
     id?: Number;
-    fullname: String;
-    email: String;
-    date_of_birth: String;
+    fullname: string;
+    email: string;
+    date_of_birth: string;
     passport: Passport;
-    organization: String;
-    position: String;
-    taxpayer_code: String;
+    organization: string;
+    position: string;
+    taxpayer_code: string;
 }

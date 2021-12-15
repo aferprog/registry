@@ -1,5 +1,5 @@
 export enum ActionType{
-    DELETE = "delete",
-    CREATE = "create",
-    CHANGE = "change",
+    DELETE,
+    CREATE,
+    CHANGE
 }

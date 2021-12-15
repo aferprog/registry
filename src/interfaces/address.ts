@@ -1,6 +1,6 @@
 export class Address{
     id?: Number;
-    country: String;
-    line_1: String;
-    line_2: String;
+    country: string;
+    line_1: string;
+    line_2: string;
 }

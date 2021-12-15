@@ -7,9 +7,9 @@ export class LoginController {
 
     @Post('/')
     async getToken(
-        @Body('email') email: String,
-        @Body('pass') pass: String
-    ) : Promise<String>
+        @Body('email') email: string,
+        @Body('pass') pass: string
+    ) : Promise<string>
     {
         return this.loginSercice.getToken(email, pass);
     }
